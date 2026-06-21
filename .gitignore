@@ -10,6 +10,7 @@ export_presets.cfg.bak
 
 # Exported builds
 exports/
+!exports/web/
 builds/
 
 # System/IDE files
