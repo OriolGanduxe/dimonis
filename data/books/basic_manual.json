@@ -1,0 +1,83 @@
+{
+  "book_id": "basic_manual",
+  "title": "Manual d'Alquímia Bàsica",
+  "author": "Frère Antoine de Montpellier",
+  "year_written": 1347,
+  "reliability_level": 0.3,
+  "category": "introductory_trap",
+  "physical_properties": {
+    "condition": "good",
+    "material": "parchment",
+    "binding": "leather",
+    "illustrations": true,
+    "pages": 156
+  },
+  "access_requirements": {
+    "tower_level": 0,
+    "prerequisite_knowledge": [],
+    "special_conditions": ""
+  },
+  "content": {
+    "chapters": [
+      {
+        "chapter_id": "ch01_introduction",
+        "title": "Introducció als Principis Alquímics",
+        "content_type": "theoretical",
+        "sections": [
+          {
+            "section_id": "sec01_basics",
+            "title": "Els Quatre Elements",
+            "main_text": "L'alquímia es basa en la comprensió dels quatre elements primordials: Foc, Aigua, Terra i Aire. Aquests elements són la base de tota matèria i la seva manipulació és la clau de la transmutació.",
+            "margin_notes": [
+              {
+                "note_id": "note01",
+                "text": "FALS! Veure Llull per la teoria correcta",
+                "reliability": "true",
+                "author": "previous_alchemist"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chapter_id": "ch02_transmutation",
+        "title": "La Transmutació dels Metalls",
+        "content_type": "practical",
+        "sections": [
+          {
+            "section_id": "sec02_gold",
+            "title": "La Creació de l'Or",
+            "main_text": "Per crear or veritable, cal escalfar plom comú amb sofre fins que es transformi. El procés és simple si se segueixen les instruccions exactes.",
+            "margin_notes": [
+              {
+                "note_id": "note02",
+                "text": "Això no funciona. He perdut molt plom provant-ho.",
+                "reliability": "true",
+                "author": "previous_alchemist"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "cross_references": ["llull_letters"],
+    "contradictions": [
+      {
+        "contradiction_id": "basic_vs_llull_elements",
+        "type": "direct_contradiction",
+        "books_involved": ["basic_manual", "llull_letters"],
+        "topic": "elemental_theory",
+        "description": "El manual bàsic ensenya teoria dels quatre elements, mentre que Llull proposa els principis mercurial, sulfuros i sal",
+        "resolution_method": "experimentation",
+        "correct_information": "La teoria de Llull és més precisa per a l'alquímia pràctica",
+        "pedagogical_purpose": "Enseñar als jugadors a no confiar en fonts òbvies i contrastar informació"
+      }
+    ]
+  },
+  "metadata": {
+    "discovery_state": "closed",
+    "player_notes": [],
+    "marked_passages": [],
+    "times_consulted": 0
+  }
+}

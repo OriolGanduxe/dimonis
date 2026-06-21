@@ -1,0 +1,72 @@
+{
+  "book_id": "llull_letters",
+  "title": "Correspondència de Ramon Llull",
+  "author": "Ramon Llull i col·laboradors",
+  "year_written": 1305,
+  "reliability_level": 0.9,
+  "category": "historical_authentic",
+  "physical_properties": {
+    "condition": "fragmentary",
+    "material": "vellum",
+    "binding": "damaged",
+    "illustrations": false,
+    "pages": 89
+  },
+  "access_requirements": {
+    "tower_level": 1,
+    "prerequisite_knowledge": ["basic_alchemical_theory"],
+    "special_conditions": "Requires Latin comprehension"
+  },
+  "content": {
+    "chapters": [
+      {
+        "chapter_id": "letter01",
+        "title": "Carta a Arnau de Vilanova",
+        "content_type": "theoretical",
+        "sections": [
+          {
+            "section_id": "principles_theory",
+            "title": "Els Tres Principis",
+            "main_text": "Estimat Arnau, com bé saps, l'obra alquímica no es basa en els quatre elements aristotèlics, sinó en els tres principis: Mercuri (l'esperit volàtil), Sofre (l'ànima combustible) i Sal (el cos fix). Aquests principis governen tota transformació.",
+            "margin_notes": [
+              {
+                "note_id": "verification_note",
+                "text": "Confirmat per experiments amb cinabri",
+                "reliability": "true",
+                "author": "previous_alchemist"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "chapter_id": "letter02", 
+        "title": "Sobre la Identificació de Materials",
+        "content_type": "practical",
+        "sections": [
+          {
+            "section_id": "identification_methods",
+            "title": "Mètodes de Reconeixement",
+            "main_text": "La identificació correcta dels materials és fonamental. El cinabri veritable es reconeix pel seu color vermell intens i perquè allibera mercuri quan s'escalfa. No confiïs mai en l'aparença sola.",
+            "margin_notes": [
+              {
+                "note_id": "safety_warning",
+                "text": "PERILL: Els vapors de mercuri són tòxics!",
+                "reliability": "true", 
+                "author": "previous_alchemist"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "cross_references": ["basic_manual", "paracelsus_treatise"],
+    "contradictions": []
+  },
+  "metadata": {
+    "discovery_state": "closed",
+    "player_notes": [],
+    "marked_passages": [],
+    "times_consulted": 0
+  }
+}

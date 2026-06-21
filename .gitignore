@@ -1,0 +1,52 @@
+# Godot 4+ specific files
+.godot/
+*.tmp
+export_presets.cfg.backup
+
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg.bak
+
+# Exported builds
+exports/
+builds/
+
+# System/IDE files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs and temporary files
+logs/
+*.log
+debug.log
+
+# Node.js (si s'usa per scripts de build)
+node_modules/
+npm-debug.log*
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Development tools
+.vscode/
+.idea/
+*.code-workspace
+
+# Specific per aquest projecte
+# Mantenir export_presets.cfg per GitHub Pages
+!export_presets.cfg

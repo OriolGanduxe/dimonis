@@ -1,0 +1,178 @@
+{
+  "experiment_id": "basic_flame_test",
+  "name": "Prova de Flama Bàsica",
+  "type": "identification",
+  "description": "Determinar la composició d'un material desconegut mitjançant l'observació del color de la seva flama quan es crema",
+  "hypothesis": "Diferents materials produeixen colors de flama característics que permeten la seva identificació",
+  "setup": {
+    "materials": [
+      {
+        "material_id": "unknown_sample",
+        "identification_state_required": "unknown",
+        "amount": "petita mostra",
+        "purity": "crude",
+        "preparation": "reduir a pols fina",
+        "role": "primary"
+      },
+      {
+        "material_id": "flame_source",
+        "identification_state_required": "confirmed",
+        "amount": "suficient per cremar",
+        "purity": "pure",
+        "preparation": "flama neta i estable",
+        "role": "catalyst"
+      }
+    ],
+    "equipment": ["pinces_metall", "cullera_combustio", "font_flama"],
+    "conditions": {
+      "temperature": {
+        "value": "ambient_to_flame",
+        "precision": "approximate",
+        "method": "flame",
+        "duration": "2-3 minuts"
+      },
+      "timing": {
+        "lunar_phase": "any",
+        "time_of_day": "any",
+        "season": "any"
+      },
+      "environment": {
+        "lighting": "natural",
+        "ventilation": "open",
+        "consecration": "none"
+      }
+    },
+    "preparation": [
+      "Assegurar ventilació adequada",
+      "Preparar mostra en pols fina",
+      "Encendre font de flama neta",
+      "Tenir aigua a mà per seguretat"
+    ]
+  },
+  "procedure": {
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Agafar una petita quantitat de mostra amb les pinces",
+        "duration": "30 segons",
+        "visual_cues": ["mostra adherida a les pinces"],
+        "safety_notes": ["No tocar la mostra amb les mans"]
+      },
+      {
+        "step_number": 2,
+        "action": "Introduir la mostra a la flama mantenint distància segura",
+        "duration": "10-30 segons",
+        "visual_cues": ["color de flama canvia"],
+        "audio_cues": ["possible crepitació"],
+        "critical_observations": ["color específic de la flama", "durada del canvi de color", "intensitat"],
+        "safety_notes": ["Mantenir pinces allunyades del cos", "No inhalar vapors"]
+      },
+      {
+        "step_number": 3,
+        "action": "Observar i registrar el color de la flama",
+        "duration": "observació continuada",
+        "critical_observations": ["color inicial", "color principal", "colors secundaris", "durada de cada color"],
+        "decision_points": [
+          {
+            "condition": "flama verda intensa",
+            "action_if_true": "possible presència de coure",
+            "action_if_false": "continuar observació"
+          },
+          {
+            "condition": "flama vermella brillant", 
+            "action_if_true": "possible presència de liti o estronci",
+            "action_if_false": "avaluar altres colors"
+          }
+        ]
+      },
+      {
+        "step_number": 4,
+        "action": "Retirar la mostra de la flama i deixar refredar",
+        "duration": "1-2 minuts",
+        "safety_notes": ["Esperar refredament complet abans de manipular"]
+      }
+    ],
+    "timing_requirements": "Total: 5-10 minuts",
+    "critical_points": [
+      "Observació precisa del color de flama",
+      "Registre immediat de les observacions",
+      "No contaminar la mostra"
+    ],
+    "safety_measures": [
+      "Ventilació adequada",
+      "Aigua per emergències",
+      "No inhalar vapors",
+      "Distància segura de la flama"
+    ]
+  },
+  "results": {
+    "possible_outcomes": [
+      {
+        "outcome_id": "copper_identification",
+        "type": "complete_success",
+        "probability": 0.8,
+        "conditions_for": ["material contains copper compounds"],
+        "results": {
+          "material_changes": [],
+          "information_gained": [
+            {
+              "type": "identification",
+              "content": "Material conté compostos de coure",
+              "confidence": "probable"
+            }
+          ]
+        }
+      },
+      {
+        "outcome_id": "inconclusive_result", 
+        "type": "partial_success",
+        "probability": 0.6,
+        "conditions_for": ["material burns but color unclear"],
+        "results": {
+          "information_gained": [
+            {
+              "type": "property",
+              "content": "Material és combustible",
+              "confidence": "certain"
+            }
+          ]
+        }
+      }
+    ],
+    "success_conditions": [
+      "Flama produeix color característic identificable",
+      "Color es manté prou temps per observació clara",
+      "No hi ha contaminació de la mostra"
+    ],
+    "failure_modes": [
+      {
+        "failure_id": "sample_contamination",
+        "cause": "contamination",
+        "symptoms": ["colors múltiples i confusos", "flama inestable"],
+        "consequences": {
+          "information_learned": ["La importància de mostres pures"]
+        },
+        "prevention": ["Netejar bé l'equip", "Usar mostres fresques"]
+      },
+      {
+        "failure_id": "insufficient_sample",
+        "cause": "wrong_proportions", 
+        "symptoms": ["color massa feble per observar"],
+        "consequences": {
+          "information_learned": ["Cal quantitat adequada per resultats clars"]
+        },
+        "recovery": {
+          "possible": true,
+          "method": "Repetir amb més mostra"
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "difficulty": "basic",
+    "prerequisites": [],
+    "unlocks": ["intermediate_flame_tests", "material_combustibility_knowledge"],
+    "estimated_duration": "10 minuts",
+    "risk_level": "caution"
+  }
+}
