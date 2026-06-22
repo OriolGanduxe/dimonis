@@ -1,0 +1,71 @@
+{
+  "rooms": [
+    {
+      "id": "tower",
+      "name": "La Torre",
+      "description": "La torre de l'alquimista, plena de misteris per descobrir.",
+      "background": "res://assets/backgrounds/tower/tower_bg.jpg",
+      "music": "",
+      "hotspots": [
+        {
+          "id": "door_library",
+          "label": "Biblioteca",
+          "hint": "Una porta antiga cap a la biblioteca",
+          "target_room": "library",
+          "x": 0.08,
+          "y": 0.25,
+          "width": 0.12,
+          "height": 0.40
+        },
+        {
+          "id": "door_laboratory",
+          "label": "Laboratori",
+          "hint": "Una porta que porta al laboratori",
+          "target_room": "laboratory",
+          "x": 0.80,
+          "y": 0.20,
+          "width": 0.14,
+          "height": 0.45
+        }
+      ]
+    },
+    {
+      "id": "library",
+      "name": "La Biblioteca",
+      "description": "Prestatgeries plenes de llibres antics i manuscrits.",
+      "background": "res://assets/backgrounds/library/library_bg.jpg",
+      "music": "",
+      "hotspots": [
+        {
+          "id": "door_back",
+          "label": "Tornar a la Torre",
+          "hint": "La sortida cap a la torre",
+          "target_room": "tower",
+          "x": 0.85,
+          "y": 0.70,
+          "width": 0.12,
+          "height": 0.28
+        }
+      ]
+    },
+    {
+      "id": "laboratory",
+      "name": "El Laboratori",
+      "description": "L'olor de sofre i herbes omple l'aire. Instruments alquímics cobreixen les taules.",
+      "background": "res://assets/backgrounds/laboratory/lab_bg.jpg",
+      "music": "",
+      "hotspots": [
+        {
+          "id": "door_back",
+          "label": "Tornar a la Torre",
+          "hint": "La sortida cap a la torre",
+          "target_room": "tower",
+          "x": 0.04,
+          "y": 0.65,
+          "width": 0.10,
+          "height": 0.30
+        }
+      ]
+    }
+  ]
+}

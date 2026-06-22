@@ -85,3 +85,7 @@ ui_end={
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+
+[autoload]
+
+NavigationManager="*res://scripts/core/NavigationManager.gd"
